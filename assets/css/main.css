@@ -190,6 +190,14 @@ input, select, textarea {
 
 	p, ul, ol, dl, table {
 		margin-bottom: 2em;
+		color: black;
+	}
+	dt {
+		font-size: 20px;
+	}
+	dd {
+		font-size: 14px; 
+		padding-bottom: 10px;
 	}
 
 /* Container */
