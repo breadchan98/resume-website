@@ -18,7 +18,9 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	scroll-behavior: smooth	
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -1583,6 +1585,29 @@ input, select, textarea {
 			background: #404248;
 			color: #fff;
 		}
+
+/* Buttons */
+
+			.buttonpc {
+  				background-color: #0281D1;
+  				border: none;
+				border-radius: 20px;
+  				color: white;
+  				padding-top: 10px;
+				padding-bottom: 10px;
+  				text-align: center;
+  				text-decoration: none;
+  				display: block;
+  				font-size: 16px;
+				font-weight: bold;
+  				margin: 0 auto;
+  				cursor: pointer;
+				width: 25%;
+			}
+
+.button-container {
+	display: flex;
+	}
 
 /* Image */
 
