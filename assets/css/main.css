@@ -69,6 +69,14 @@ input, select, textarea {
 	appearance: none;
 }
 
+.techsupport_desc {
+	font-size: 1.75em;
+	padding-bottom: 10px;
+}
+.techsupport_info {
+	font-size: 1.25em;
+}
+
 /* Basic */
 
 	@-ms-viewport {
