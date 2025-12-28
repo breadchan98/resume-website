@@ -204,6 +204,13 @@ input, select, textarea {
 		font-size: 14px; 
 		padding-bottom: 10px;
 	}
+	div.toc-border {
+		width: 50vw;
+		background-color: #ededed;
+		border: 2px solid lightgray;
+		border-radius: 20px;
+		padding: 20px;
+	}
 
 /* Container */
 
