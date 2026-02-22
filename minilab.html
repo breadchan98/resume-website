@@ -57,7 +57,7 @@
 							<!-- Content -->
 								<article>
 
-									<h2>HomeLab Diagram</h2>
+									<h2>HomeLab Information</h2>
 									
 									<p>My HomeLab is very simple. I plan to add more into the future, such as upgrading the main rig to a more server
 										machine than a desktop-workstation machine.
@@ -65,6 +65,55 @@
 
 									<img src="images/homelab_setup.png" alt="net diagram" style="display: block; width:100%; height:auto; margin: auto; max-width: 100%">
 									
+									<br>
+
+									<h3>OpenMediaVault Storage Solution (temporary)</h3>
+									<p style="font-size: 16px;">
+										A shared storage was created in OpenMediaVault with <strong>Samba protocol </strong>enabled. The home machine has 2x2TB internal storage, not NAS. When the VM was created, both drives were binded.
+										<br>
+										<br>
+										Based on the example below, a filesystem was created on one of the drives (/mnt/HostPC), creating a disk and enabling it to be shared. <strong>HostPC</strong> can be accessed anywhere on Windows, Mac, or Linux using the IP address of OpenMediaVault and putting in credentials.
+										<br>
+										<br>
+										Once the drive is accessible via Samba, a mount point was created on the root of Proxmox to allow Jellyfin to communicate to it. Binding the HostPC to the /mnt/Shared to allow access by Jellyfin LXC.
+										<br>
+										<br>
+										Lastly, a mount point command is created to allow the Jellyfin's /mnt/Shared directory to connect to Proxmox root's /mnt/Shared directory, creating the connection.
+									</p>
+									<img src="images/bind.png" alt="net diagram" style="display: block; width:100%; height:auto; margin: auto; max-width: 100%">
+									
+									<br>
+
+
+									<h3>VM/Container Configuration</h3>
+									<dt><strong>Proxmox VE 9.1 (as of Feb 2026)</strong></dt>
+									<br>
+									<!--List-->
+									<dl>
+										<dt><strong>1. Jellyfin (LXC)</strong></dt>
+										<dd style="font-size: 18px;">
+											- I originally used Plex Media Server as my home media server, but after the subscription changes, I decided to move to Jellyfin. Jellyfin's UI might not be as pretty as Plex Media Servers, but it works and I don't have to rely on a subscription to enable hardware acceleration.
+										</dd>
+										<dt><strong>2. OpenMediaVault (LXC)</strong></dt>
+										<dd style="font-size: 18px;">
+											- I do not have a NAS storage yet. I am thinking of UGREEN or Synology or whatever fits my budget, so for now, I am relying on software-based NAS.
+										</dd>
+										<dt><strong>3. Minecraft Server (VM)</strong></dt>
+										<dd style="font-size: 18px;">
+											- For friends. It is under Xubuntu for lightweight use.
+										</dd>
+										<dt><strong>4. Docker (LXC)</strong></dt>
+										<dd style="font-size: 18px;">
+											- Some are easy to deploy in Docker, aka most of the instructions I found primarily ran on Docker well, compared to straight Proxmox LXC. Examples include:
+											<ul>
+												<li><strong>P2P Client</strong>, if you know what I mean. Can't say much, but the logo of the software is blue.</li>
+												<li><strong>NGINX Web Server.</strong> I use this for web hosting my files locally to be accessed by apps, such as console homebrew.</li>
+												<li><strong>Wireguard VPN.</strong> I use this a lot to access my stuff remotely. Created a private key.</li>
+												<li><strong>AgentDVR.</strong> It is not created on the diagram, but this was recently installed for outdoor and indoor security camera DVR. I do not want to pay for a subscription.</li>
+											</ul>
+										</dd>
+									</dl>
+
 								</article>
 
 						</div>
