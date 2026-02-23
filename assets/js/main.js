@@ -31,6 +31,27 @@
 			speed: 300
 		});
 
+	//Popup Window
+	const img = document.getElementById("projectImg");
+	const overlay = document.getElementById("overlay");
+	const closeBtn = document.getElementById("closeBtn");
+
+	img.addEventListener("click", () => {
+		overlay.style.display = "flex";
+	});
+
+	// Close popup
+	closeBtn.addEventListener("click", () => {
+  		overlay.style.display = "none";
+	});
+
+// Close when clicking outside
+	overlay.addEventListener("click", (e) => {
+  		if (e.target === overlay) {
+    		overlay.style.display = "none";
+  		}	
+	});
+
 	// Nav.
 
 		// Toggle.
