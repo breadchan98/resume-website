@@ -13,17 +13,14 @@
 			<!-- Header -->
 				<div id="header-wrapper">
 					<header id="header" class="container">
-
 						<!-- Logo -->
 							<div id="logo">
-								<img src="images/main-logo.png" alt="main logo" style="width:10%; height:auto;">
+								<a href="index.html"><img src="images/main-logo.png" alt="main logo" style="width:10%; height:auto;"></a>
 							</div>
-
 						<!-- Nav -->
 							<nav id="nav">
 								<ul>
-									<li><a href="index.html">Welcome</a></li>
-									
+									<li><a href="index.html">Welcome</a></li>	
 									<li><a href="resume.html">Resume</a></li>
 									<li>
 										<a href="#">Tech Support/Builds</a>
@@ -31,7 +28,6 @@
 											<li><a href="support-builds.html">Tech Support</a></li>
 											<li><a href="pcbuild.html">PC Build</a></li>
 										</ul>
-										
 									</li>
 									<li class="current">
 										<a href="#">Projects</a>
@@ -45,110 +41,119 @@
 									<li><a href="contact.html">Contact Me</a></li>
 								</ul>
 							</nav>
-
 					</header>
 				</div>
-
 			<!-- Main -->
 				<div id="main-wrapper">
+					<h2 style="text-align: center;">PC System Layout</h2>
+					<div style="padding: 25px 50px; text-align: center;">
+						<p>This build was designed with both performance (for gaming) and long term reliability in mind. 
+							I wanted a system that could handle demanding workloads, support my IT projects, and deliver smooth gaming experiences without compromise. 
+							From selecting each part to managing cables and airflow, I focused on creating a machine that balances power, efficiency, and clean design.</p>
+					</div>
+					<div class="button-container">
+						<a href=#mainpc2 class="buttonpc">Main PCs</a> <br>
+						<a href=#homelab class="buttonpc">HomeLab PC</a> <br>
+					</div>
+					<br>
 					<div class="container">
-						<div id="content">
+						<div class="row gtr-200">
+							<div class="col-8 col-12-medium">
+								<div id="content">
+									<!-- Content -->
+										<article>
 
-							<!-- Content -->
-								<article>
-
-									<h2>PC Specifications</h2>
-									
-									<p>This build was designed with both performance (for gaming) and long term reliability in mind. 
-										I wanted a system that could handle demanding workloads, support my IT projects, and deliver smooth gaming experiences without compromise. 
-										From selecting each part to managing cables and airflow, I focused on creating a machine that balances power, efficiency, and clean design.</p>
-									<div class="button-container">
-										<a href=#mainpc class="buttonpc">Main PC</a> <br>
-										<a href=#homelab class="buttonpc">HomeLab PC</a> <br>
-									</div>
-									<br>
-									<h3 id="mainpc">Main PC:</h3>
-									<p>I wrote a small explanation to <strong>some of the parts</strong> as to why I chose this item. Most of them are my opinion.</p>
-									<p>I also created a link to my PC specs via <a href="https://pcpartpicker.com/list/rdCzQd">PCPartPicker</a>. Feel free to check how much I spent!</p>
-									
-									<!-- Main PC Description Area -->
-									<dl>
-										<dt><strong>CPU: </strong>AMD Ryzen™ 7 5800XT</dt>
-										<dd>
-											- I've had this for so long, it works incredibly well in terms of workload and gaming.
-											Used a lot of it for gaming and virtual machines. Works great at 1440p at High Settings, in direct to my GPU.
-										</dd>
-										<dt><strong>Motherboard: </strong>MSI MAG B550 TOMAHAWK MAX WIFI</dt>
-										<dd>
-											- I should've went with an X570 Motherboard to utilize the overclocking and extra
-											features of the processor and other components, but I was actually in a tight budget
-											during that time and this motherboard have been growing strong til this day. I chose
-											a MSI motherboard as I like their UEFI UI and I have been using their motherboards for years
-											without fail.
-										</dd>
-										<dt><strong>RAM: </strong>G.Skill Ripjaws V 64GB (4x16GB) DDR4-3200 </dt>
-										<dd>
-											- This is a good amount of RAM for what I need for one of my personal private VM,
-											exclusively for personal things, such as socials and/or banking, etc. I also use it for creating
-											practice home labs for work and a lot usage for programming in the side. 
-											<em><strong>And chrome uses alot of my RAM. sigh.</strong></em>
-										</dd>
-										<dt><strong>GPU: </strong>PowerColor Red Dragon AMD Radeon RX 6800 16GB GDDR6</dt>
-										<dd>
-											- I used to own a 1070 Ti for a long time until recently I went to snag a RX 6800. <em>Why not the XT variant?</em>
-											Because it was a bit pricey, even used. Also, I chose this instead of a 9060 XT because it was "cheaper" for the same performance.
-											Maybe when I switch to a newer PCIe 5.0, then maybe to a future AMD GPU.
-										</dd>
-										<dt><strong>Storage: </strong></dt>
-										<dd>
-											<ul>
-												<li><strong>Main OS: </strong>2TB Samsung 990 Evo Plus</li>
-												<li><strong>Games: </strong>2x2TB Samsung 860 EVO (Raid 0)</li>
-												<li><strong>Documents: </strong>4TB WD Black 7200RPM HDD (64MB Cache, not 256MB)</li>
-												<li><strong>Backup Drive 1: </strong>2TB Seagate Barracuda</li>
-												<li><strong>Backup Drive 2 (extra): </strong>XPG GAMMIX 1TB S11 Pro (my old NVMe)</li>
-											</ul>
-										</dd>
-										<dt style="padding-bottom: 10px;"><strong>PSU: </strong>EVGA SuperNova 650 G2 (will upgrade for future parts)</dt>
-										<dt style="padding-bottom: 10px;"><strong>Case: </strong>Phanteks Enthoo Pro M</dt>
-									</dl>
-								
-									<!-- HomeLab Description Area -->
-									 <h3 id="homelab">HomeLab PCs:</h3>
-									 <p>Just a small specifications. For more in depth, click <a href=minilab.html>here</a> for my homelab!</p>
-									<dl>
-										<dt><strong>Lab PC: Dell Inspiron 3470</strong></dt>
-										<dd>
-										 <ul>
-											<li>Proxmox VE V9.1</li>
-											<li>Intel® Core™ i7-8700T</li>
-											<li>ADATA 32GB DDR4-2400</li>
-											<li>Nvidia GT1030</li>
-											<li>256GB M.2 SATA SSD (Proxmox VE)</li>
-											<li>2x2TB PNY SSDs - 2TB for Jellyfin, 2TB for others</li>
-											<li>Dual Port 10G PCie Network Adapter Card</li>
-										 </ul>
-										</dd>
-
-										<dt><strong>PFSense Fanless Mini PC:</strong></dt>
-										<dd>
-											<ul>
-												<li>Intel Celeron N5105</li>
-												<li>8GB RAM</li>
-												<li>128GB NVMe</li>
-												<li>4x Intel i226 2.5G LAN</li>
-											</ul>
-										</dd>
-										<dt><strong>Other Devices:</strong></dt>
-										<dd>
-											<ul>
-												<li>NETGEAR 8-Port GS108T Managed Switch</li>
-												<li>Ubiquiti U6 Pro Wifi6</li>
-											</ul>
-										</dd>
-									</dl>
-								</article>
-
+											<br>
+											<!-- Linux PC Description Area -->
+											<h3 id="mainpc2">Home PC:</h3>
+											<dl>
+												<dt><strong><em>Used</em> Lenovo Thinkcentre M720q</strong></dt>
+												<dd>
+													<ul style="font-size: large;">
+														<li>Linux Mint</li>
+														<li>Intel® Core™ i5-8500T</li>
+														<li>32GB DDR4-3200MHz</li>
+														<li>1TB Samsung 990 Evo Plus</li>
+														<li>NO GPU, but will plan.. maybe a RX 6400?</li>
+													</ul>
+												</dd>
+											</dl>
+											<h3 id="mainpc">Gaming PC:</h3>
+											<p>I created a link to my PC specs via <a href="https://pcpartpicker.com/list/rdCzQd">PCPartPicker</a>. Feel free to check how much I spent!</p>
+											<!-- Gaming PC Description Area -->
+											<dl>
+												<dt style="padding-bottom: 10px;"><strong>CPU: </strong>AMD Ryzen™ 7 5800XT</dt>											
+												<dt style="padding-bottom: 10px;"><strong>Motherboard: </strong>MSI MAG B550 TOMAHAWK MAX WIFI</dt>
+												<dt style="padding-bottom: 10px;"><strong>RAM: </strong>G.Skill Ripjaws V 64GB (4x16GB) DDR4-3200 </dt>											
+												<dt style="padding-bottom: 10px;"><strong>GPU: </strong>PowerColor Red Dragon AMD Radeon RX 6800 16GB GDDR6</dt>
+												<dt style="padding-bottom: 10px;"><strong>Storage: </strong></dt>
+												<dd>
+													<ul>
+														<li><strong>Main OS: </strong>2TB Samsung 990 Evo Plus</li>
+														<li><strong>Games: </strong>2x2TB Samsung 860 EVO (Raid 0)</li>
+														<li><strong>Documents: </strong>4TB WD Black 7200RPM HDD (64MB Cache, not 256MB)</li>
+														<li><strong>Backup Drive 1: </strong>2TB Seagate Barracuda</li>
+														<li><strong>Backup Drive 2 (extra): </strong>XPG GAMMIX 1TB S11 Pro (my old NVMe)</li>
+													</ul>
+												</dd>
+												<dt style="padding-bottom: 10px;"><strong>PSU: </strong>EVGA SuperNova 650 G2 (will upgrade for future parts)</dt>
+												<dt style="padding-bottom: 10px;"><strong>Case: </strong>Phanteks Enthoo Pro M</dt>
+												<dt style="padding-bottom: 10px;"><strong>OS: </strong>Windows 11 Pro</dt>
+											</dl>
+											<!-- HomeLab Description Area -->
+											 <h3 id="homelab">HomeLab PCs:</h3>
+											 <p>Just a small specifications. For more in depth, click <a href=minilab.html>here</a> for my homelab!</p>
+											<dl>
+												<dt><strong>Lab PC: Dell Inspiron 3470</strong></dt>
+												<dd>
+												 <ul>
+													<li>Proxmox VE V9.1</li>
+													<li>Intel® Core™ i7-8700T</li>
+													<li>ADATA 32GB DDR4-2400</li>
+													<li>Nvidia GT1030</li>
+													<li>256GB M.2 SATA SSD (Proxmox VE)</li>
+													<li>2x2TB PNY SSDs - 2TB for Jellyfin, 2TB for others</li>
+													<li>Dual Port 10G PCie Network Adapter Card</li>
+												 </ul>
+												</dd>
+												<dt><strong>PFSense Fanless Mini PC:</strong></dt>
+												<dd>
+													<ul>
+														<li>Intel Celeron N5105</li>
+														<li>8GB RAM</li>
+														<li>128GB NVMe</li>
+														<li>4x Intel i226 2.5G LAN</li>
+													</ul>
+												</dd>
+												<dt><strong>Other Devices:</strong></dt>
+												<dd>
+													<ul>
+														<li>NETGEAR 8-Port GS108T Managed Switch</li>
+														<li>Ubiquiti U6 Pro Wifi6</li>
+													</ul>
+												</dd>
+											</dl>
+										</article>
+								</div>
+							</div>
+							<div class="col-4 col-12-medium">
+								<div id="sidebar">
+									<section>
+										<h3>Random PC Stuff Info</h3>
+										<dl>
+											<dt><strong>My Peripherals:</strong></dt>
+											<dd>
+												<ul style="font-size: medium;">
+													<li><strong>Keyboard: </strong>Keychron V1 Ultra 8K</li>
+													<li><strong>Mouse: </strong>Glorious Model D Wireless Mouse</li>
+													<li><strong>Monitor 1: </strong>Gigabyte 34-Inch Ultrawide 3440x1440p 144Hz G34WQC</li>
+													<li><strong>Monitor 2: </strong>LG 34-Inch Ultrawide 2580x1080 100Hz 34WQ500-B</li>
+												</ul>
+											</dd>
+										</dl>
+									</section>
+								</div>
+							</div>	
 						</div>
 					</div>
 				</div>
